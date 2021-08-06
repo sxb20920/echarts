@@ -101,7 +101,7 @@ const dataZoomProcessor: StageHandler = {
             // So we should filter x-axis after reset x-axis immediately,
             // and then reset y-axis and filter y-axis.
             dataZoomModel.eachTargetAxis(function (axisDim, axisIndex) {
-                dataZoomModel.getAxisProxy(axisDim, axisIndex).filterData(dataZoomModel, api);
+                dataZoomModel.getAxisProxy(axisDim, axisIndex);
             });
         });
 
